@@ -1,0 +1,16 @@
+{
+  "name": "chrome-puppeteer",
+  "version": "1.0.0",
+  "description": "操作浏览器访问指定网站",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "author": "shimmer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.1.1"
+  }
+}

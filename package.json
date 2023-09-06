@@ -8,7 +8,7 @@
     "dev": "node index.js"
   },
   "author": "shimmer",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "puppeteer": "^21.1.1"

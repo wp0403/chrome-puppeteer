@@ -2,7 +2,7 @@ const express = require("express");
 const puppeteer = require("puppeteer");
 
 const app = express();
-const port = 3000;
+const port = 7000;
 
 // 创建一个 Map 结构存储 cookie 和过期时间
 const cookieMap = new Map();
@@ -19,6 +19,7 @@ app.get("/", async (req, res) => {
     // 启动 Puppeteer
     const browser = await puppeteer.launch({
       headless: true,
+      args: ['--no-sandbox', '--disable-dev-shm-usage'],
     });
     const page = await browser.newPage();
 
